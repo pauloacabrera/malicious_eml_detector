@@ -6,8 +6,6 @@ I built this project to practice full-stack development while applying cybersecu
 
 The application allows users to upload email files, analyze their contents, view security results, and monitor scan activities through a dashboard.
 
----
-
 ## Features
 
 ### User Authentication
@@ -17,7 +15,7 @@ The application allows users to upload email files, analyze their contents, view
 • Protected dashboard access  
 • Secure password handling  
 
-### Email Analysis
+## Email Analysis
 
 • Upload `.eml` email files for scanning  
 • Extract email information including:
@@ -57,8 +55,6 @@ The dashboard provides an overview of scanned emails:
 • Threat distribution charts  
 • Scan activity overview  
 
----
-
 # Technologies Used
 
 ## Frontend
@@ -95,8 +91,6 @@ The dashboard provides an overview of scanned emails:
 • Git/GitHub  
 • Thunder Client  
 
----
-
 # How It Works
 
 The application follows this workflow:
@@ -109,6 +103,5 @@ The application follows this workflow:
 • Results are stored in Oracle Database  
 • User can view the analysis report and dashboard statistics  
 
----
 
 # Project Structure
