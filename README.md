@@ -1,75 +1,114 @@
 # Malicious EML Detector
 
-A full-stack cybersecurity application designed to analyze suspicious email files (`.eml`) and identify potential phishing or malicious activity through email parsing, security checks, and risk-based threat scoring.
+Malicious EML Detector is a full-stack cybersecurity application that analyzes `.eml` email files and identifies possible phishing or malicious activity.
 
-The system provides an end-to-end workflow:
+I built this project to practice full-stack development while applying cybersecurity concepts such as email analysis, authentication, threat detection, and risk assessment.
 
-# Upload Email → Analyze Threat → Generate Security Report → Store Results → View Dashboard Analytics
+The application allows users to upload email files, analyze their contents, view security results, and monitor scan activities through a dashboard.
 
+---
 
+## Features
 
-# Features
+### User Authentication
 
-# User Authentication
-- User registration and login system
-- JWT-based authentication
-- Protected application routes
-- Secure password hashing using bcrypt
+• User registration and login  
+• JWT-based authentication  
+• Protected dashboard access  
+• Secure password handling  
 
-# EML File Analysis
-- Upload `.eml` email files
-- Extract email metadata:
-  - Sender
-  - Recipient
-  - Subject
-  - Date
-- Analyze email content and headers
+### Email Analysis
 
-# Security Analysis
+• Upload `.eml` email files for scanning  
+• Extract email information including:
+  • Sender
+  • Recipient
+  • Subject
+  • Date
 
-The system evaluates:
+• Analyze email headers and content for possible threats
 
-- SPF authentication status
-- DKIM authentication status
-- DMARC authentication status
-- Suspicious keywords
-- Potential phishing indicators
-- Threat score calculation
+### Threat Detection
 
-# Threat Detection
+The system checks email indicators such as:
 
-Classifies emails into:
+• SPF authentication status  
+• DKIM authentication status  
+• DMARC authentication status  
+• Suspicious keywords  
+• Potential phishing patterns  
+• Risk indicators found in the email  
 
-- Safe
-- Suspicious
-- Malicious
+The system generates:
 
-Provides:
+• Threat score  
+• Threat level  
+• Security findings  
+• Final verdict  
 
-- Threat score
-- Threat level
-- Security indicators
-- Analysis verdict
+### Dashboard Analytics
 
-# Cybersecurity Dashboard
+The dashboard provides an overview of scanned emails:
 
-Provides security insights through:
+• Total emails analyzed  
+• Safe email count  
+• Suspicious email count  
+• Malicious email count  
+• Threat distribution charts  
+• Scan activity overview  
 
-- Total emails analyzed
-- Threat statistics
-- Risk distribution charts
-- Scan analytics
+---
 
-# Database Storage
+# Technologies Used
 
-Stores:
+## Frontend
 
-- User accounts
-- Email scan results
-- Threat analysis records
+• React.js  
+• Vite  
+• JavaScript  
+• HTML5  
+• CSS3  
+• Chart.js  
 
-using Oracle Database.
+## Backend
 
+• Node.js  
+• Express.js  
+• REST API  
+• JWT Authentication  
+• bcrypt  
 
+## Threat Analyzer
 
-# 🏗️ System Architecture
+• Python  
+• Flask  
+• Email parsing  
+• Custom threat scoring logic  
+
+## Database
+
+• Oracle Database  
+
+## Development Tools
+
+• Visual Studio Code  
+• Git/GitHub  
+• Thunder Client  
+
+---
+
+# How It Works
+
+The application follows this workflow:
+
+• User creates an account and logs in  
+• User uploads an `.eml` email file  
+• Backend receives and processes the uploaded file  
+• Python analyzer extracts email details and checks possible threats  
+• The system calculates a threat score and determines the risk level  
+• Results are stored in Oracle Database  
+• User can view the analysis report and dashboard statistics  
+
+---
+
+# Project Structure
